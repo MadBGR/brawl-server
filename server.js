@@ -27,6 +27,8 @@ app.get("/player/:tag", async (req, res) => {
 }
 });
 
-app.listen(process.env.PORT || 3000, () => {
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
     console.log("Serveur lancé sur le port 3000");
 });
